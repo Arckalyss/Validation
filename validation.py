@@ -67,28 +67,4 @@ print(bfs(DictionaryGraph(graph, ["a"]), onEntry, None))
 
 
 def HanoïGraph():
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    pass
