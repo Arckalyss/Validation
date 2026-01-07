@@ -1,3 +1,6 @@
+from BFS import RootedGraph
+
+
 class AB3Graph(RootedGraph):
     def roots(self):
         return [("I", "I", "DOWN", "DOWN")]

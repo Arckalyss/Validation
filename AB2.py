@@ -1,3 +1,5 @@
+from BFS import RootedGraph
+
 class AB2Graph(RootedGraph):
     def roots(self):
         return [("I", "I", "DOWN", "DOWN")]  # (a, b, flagA, flagB)

@@ -1,3 +1,5 @@
+from BFS import RootedGraph
+
 
 class AB1Graph(RootedGraph):
     def roots(self):
