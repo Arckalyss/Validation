@@ -16,24 +16,10 @@ de résoudre des problèmes (ex. Tours de Hanoï),
 
 et de vérifier des propriétés de sûreté et de vivacité (ex. exclusion mutuelle, deadlocks) par exploration explicite de l’espace d’états, avec génération de contre-exemples minimaux.
 
-Architecture générale
-
-L’architecture suit une organisation en couches clairement séparées :
-
-LanguageSemantics        (définition abstraite d’un système)
-        ↓
-Sémantiques concrètes   (Hanoï, Alice & Bob, etc.)
-        ↓
-SoupSemantics           (composition synchrone de systèmes)
-        ↓
-LS2RG                   (conversion en graphe enraciné)
-        ↓
-BFS                     (exploration / vérification)
-
 
 Cette séparation permet de réutiliser les mêmes algorithmes d’exploration pour des modèles très différents.
 
-Organisation des fichiers
+# Organisation des fichiers : 
 languagesemantics.py
 
 Définit l’interface abstraite LanguageSemantics d’un système dynamique discret :
@@ -124,7 +110,7 @@ détecte les deadlocks (propriété de vivacité négative),
 
 reconstruit automatiquement des traces minimales menant à un contre-exemple ou à un état bloqué.
 
-Exécution
+# Exécution
 Validation de la composition (Tours de Hanoï)
 python -m soup.soup_validation
 
