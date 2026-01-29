@@ -4,7 +4,7 @@ from __future__ import annotations
 from collections import deque
 from typing import Deque, Dict, Iterable, List, Optional, Tuple, TypeVar
 
-from soup.alicebob_langagesemantics import (
+from alicebob_langagesemantics import (
     AB1LanguageSemantics,
     AB2LanguageSemantics,
     AB3LanguageSemantics,

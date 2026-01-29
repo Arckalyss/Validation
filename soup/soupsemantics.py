@@ -1,5 +1,5 @@
-from soup.languagesemantics import LanguageSemantics
-from soup.ls2rg import LS2RG
+from languagesemantics import LanguageSemantics
+from ls2rg import LS2RG
 from itertools import product
 from copy import deepcopy
 

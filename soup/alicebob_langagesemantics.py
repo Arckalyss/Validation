@@ -3,7 +3,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import List, Tuple, Union
 
-from soup.languagesemantics import LanguageSemantics
+from languagesemantics import LanguageSemantics
 
 
 # --- Types d'états ---
