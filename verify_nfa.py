@@ -7,15 +7,9 @@ Exploration BFS du produit système × propriété.
 import sys
 from pathlib import Path
 
-# Ajouter le dossier "common" dans sys.path pour les imports
-sys.path.insert(0, str(Path(__file__).parent / "common"))
-
-from languagesemantics import LanguageSemantics
-from propertysemantics import PropertySemantics
-from step import Step, StutteringAction
-
-# Ajouter le dossier courant pour trouver ls2rg, bfs, stepsynchronousproduct
-sys.path.insert(0, str(Path(__file__).parent))
+from common.languagesemantics import LanguageSemantics
+from common.propertysemantics import PropertySemantics
+from common.step import Step, StutteringAction
 
 from ls2rg import LS2RG
 from stepsynchronousproduct import StepSynchronousProduct

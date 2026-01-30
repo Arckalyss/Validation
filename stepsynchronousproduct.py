@@ -1,8 +1,8 @@
 #stepsynchronousproduct.py
 from matplotlib.pyplot import step
-from languagesemantics import LanguageSemantics
-from step import Step, StutteringAction
-from propertysemantics import PropertySemantics
+from common.languagesemantics import LanguageSemantics
+from common.step import Step, StutteringAction
+from common.propertysemantics import PropertySemantics
 
 class StepSynchronousProduct(LanguageSemantics):
     """
@@ -33,7 +33,7 @@ class StepSynchronousProduct(LanguageSemantics):
 
         # Pour chaque action système, construire des steps (source, a, target)
         for a in lhs_actions:
-            targets = self.lhs.execute(sys_state, a)  # chez toi: liste de targets
+            targets = self.lhs.execute(sys_state, a)  # liste de targets
             if targets:
                 number_of_effective += 1
             for t in targets:
